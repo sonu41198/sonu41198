@@ -7,11 +7,15 @@ printf("enter the number:");
 scanf("%d",&n);
 if(n%2==0)
 {
-printf("%d is even",n);
+  printf("%d is even",n);
 }
+else if(n<0)
+{
+  printf("invalid input");
+}  
 else
 {
-printf("%d is odd",n);
+  printf("%d is odd",n);
 }
 return 0;
 }
