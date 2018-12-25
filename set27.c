@@ -14,11 +14,11 @@ a=a/10;
 }
 if(t==s)
 {
-printf("is amstrong");
+printf("yes");
 }
 else
 {
-printf("is not amstrong");
+printf("no");
 }
 return 0;
 }
