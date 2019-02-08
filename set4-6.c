@@ -2,13 +2,13 @@
 #include<string.h>
 int main() 
 {
-	char s[1000];
+	char a[1000];
 	int n,i,count=0;
-	scanf("%[^\t\n]s",s);
-	n=strlen(s);
+	scanf("%[^\t\n]s",a);
+	n=strlen(a);
 	for(i=0;i<n;i++)
 	{
-	   if(s[i]>='0'&&s[i]<='9')
+	   if(a[i]>='0'&&a[i]<='9')
 	    {
 	        count++;
 	    }
