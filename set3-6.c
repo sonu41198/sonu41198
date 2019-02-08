@@ -2,7 +2,7 @@
 #include<conio.h>
 int main() 
 {
-    int n,a[10],temp=0,j,i;
+    int n,a[10],t=0,j,i;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
@@ -14,9 +14,9 @@ int main()
        {
            if(a[i]>a[j])
            {
-               temp=a[i];
+               t=a[i];
                a[i]=a[j];
-               a[j]=temp;
+               a[j]=t;
            }
        }
     }
