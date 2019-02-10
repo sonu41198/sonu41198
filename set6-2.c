@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,rem,rev=0;
-    scanf("%d",&n);
-    if(n>9)
+    int num,rem,rev=0;
+    scanf("%d",&num);
+    if(num>9)
     {
-        while(n!='\0')
+        while(num!='\0')
         {
-           rem=n%10;
+           rem=num%10;
            rev=(rev*10)+rem;
-           n=n/10;
+           num=num/10;
         }
-        n=rev;
+        num=rev;
         rem=0;
-        while(n!='\0')
+        while(num!='\0')
         {
-            rem=n%10;
+            rem=num%10;
            switch(rem)
            {
              case 0:printf("zero ");
@@ -40,13 +40,13 @@ int main()
                    break;  
            }
           
-           n=n/10;
+           num=num/10;
         }
         
     }
     else
     {
-    switch(n)
+    switch(num)
     {
         case 0:printf("zero");
                break;
