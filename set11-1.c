@@ -1,18 +1,15 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    char a[50];
-    int i,count=0,n;
-    scanf("%s",&a);
-    scanf("%d",&n);
-    for(i=0;a[i]!='\0';i++)
-    {
-        count++;
-    }
-    for(i=count;i>=count-n;i--)
-    {
-        printf("%c",a[i]);
-    }
-    return 0;
-}
+	char a[50];
+	int i,n;
+	scanf("%s %d",a,&n);
+	int len;
+	len=strlen(a);
+	for(i=n;i<=len;i++)
+	{
+		printf("%c",a[i]);
+	}
+
+	return 0;
